@@ -54,11 +54,16 @@ namespace Assignment_4_C0732104
                 if (line.Contains("sea") && line.Contains("fare"))
                 {
                     f++;
+
+
+
                 }
             }
             Console.WriteLine(f);
         }
         public void Wordskipper()
+
+
         {
             int f = 0;
             foreach (var line in File.ReadAllLines("U:/Users/732104/Assignment_4_C0732104/Beowulf.txt"))
