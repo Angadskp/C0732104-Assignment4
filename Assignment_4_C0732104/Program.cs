@@ -1,4 +1,4 @@
-﻿//Section A
+﻿//Section B
 
 
 using System;
@@ -45,9 +45,10 @@ namespace Assignment_4_C0732104
                 file.Close();
                 counter = File.ReadLines("U:/Users/732104/Assignment_4_C0732104/Beowulf.txt").Count();
                 Console.WriteLine($"File has {counter } lines.");
+                Console.WriteLine($"File has {counter * 10} Words.");
 
             }
-            }
+        }
         
             public int FindNumberOfBlankSpaces(string line)
             {
