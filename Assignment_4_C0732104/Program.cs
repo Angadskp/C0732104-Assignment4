@@ -20,7 +20,7 @@ namespace Assignment_4_C0732104
         {
             Program p = new Program();
             p.Beowulf = new ArrayList();
-            p.Wordfinder();
+            p.Wordskipper();
             Console.ReadLine();
         }
         public void Run() { this.ReadTextFiles(); }
@@ -58,11 +58,24 @@ namespace Assignment_4_C0732104
             }
             Console.WriteLine(f);
         }
+        public void Wordskipper()
+        {
+            int f = 0;
+            foreach (var line in File.ReadAllLines("U:/Users/732104/Assignment_4_C0732104/Beowulf.txt"))
+            {
+                f++;
+                if (line.Contains("fare") && (!line.Contains("war")))
+                {
+                    Console.WriteLine(f);
+                }
+
+            }
+        }
 
         public int FindNumberOfBlankSpaces(string line)
         {
             // hhtp://stackovrflow.com/questions/17812566/count-words-and-spaces-in-string-c-sharp
-           
+            
             int countSpaces = 0;
             foreach (char c in line)
 
